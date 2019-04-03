@@ -1,6 +1,6 @@
 import time as ti, random as ra, ctypes as ct
 nMax = 4
-#Esta wea es para saber cuantos items va a poder almacenar, sí esto lo cambian y ponen 100 les van a salir 100
+#Esta variable es para saber cuantos items va a poder almacenar, sí esto lo cambian y ponen 100 les van a salir 100
 # datos diferentes en vez de 4, les recomiendo que lo prueben para que vean que es verdad
 
 #Aquí creamos una clase que se llama eData y le damos un parametro dentro de los parentesis (ct.Structure) esto debe ser
@@ -15,22 +15,19 @@ def Make_Trama():
  nID_Clave  = ra.randint(0x01, 0x0f) #1..015 = Clave producto -> 4Bits
  nID_Cantidad_Producto  = ra.randint(0x01, 0xff) #1..255 = Cantidad producto -> 8Bits
  nID_Precio_Producto  = ra.randint(0x01, 0x0f) #1..015 Precio Productos -> 4 Bits
- #Aún no estoy seguro aquí, pero creo que los << son para los corrimientos decimales si mal no recuerdo.
+ #los << son para los corrimientos decimales si mal no recuerdo.
  nTrama = nID_Clave << 12 | nID_Cantidad_Producto << 4 | nID_Precio_Producto #2 Bytes c/Información 16Bits
  return nTrama
 
 #aMov es una array, matriz, lista, como sea que lo conozcan, es de una dimensión solo
-aMov = [] ; ePaq = eData() #Invocamos la clase y la asignamos en una variable (Terminar de explicar)
+aMov = [] ; ePaq = eData() #Invocamos la clase y la asignamos en una variable
 
 for i in range(nMax):
  ePaq.nBits = Make_Trama()
  aMov.append(ePaq.nBits)
 	
 for nPos in range(nMax):
- print('Word     :' + str( aMov[nPos]))
+ print('\nWord     :' + str( aMov[nPos]))
  print('Código   :' + str( aMov[nPos] >> 12 & 0x0f))
  print('Cantidad :' + str( aMov[nPos] >> 4 & 0xff))
  print('Precio   :' + str( aMov[nPos] & 0x0f))
- 
-#Después voy a hacer más pruebas con el código para tratar de entender mejor como es que funcionan las cadenas de bits
-#Dejo esto de mientras por si lo quieren leer#
