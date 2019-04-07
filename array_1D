@@ -55,6 +55,6 @@ i = 0
 
 mi_array = [i = 0][Valor 1]
            [i = 1][Valor 2]
-		   [i = 2][Valor 3]
+           [i = 2][Valor 3]
 
 """
