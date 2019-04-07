@@ -1,6 +1,6 @@
 #Explicaciones
 
-#El simbolo ^ es igual al operador lógico XOR
+#El simbolo ^ es igual al operador lógico XOR, sí x e y son 1 y 1 es 0 o sí son 0 y 0 es igual a 0, sí x e y son 1 y 0 o bisceversa es 1
 ej3 = 230 ^ 180
 
 print("Resultado con operador lógico XOR: ", ej3)
