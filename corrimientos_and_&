@@ -1,0 +1,26 @@
+#Explicaciones
+
+# >> = shift right, hace un corrimiento de 32 al binario de 3
+# el & es equivalente a el operador lógico AND y lo que hace es que sí x & y = 1, entonces es 1, caso contrario es 0
+ej1 = 32 >> 3 & 0x13
+print("Corrimiento hacía la derecha: ", 32 >> 3)
+# Explicación visual: 32 en binario es igual a 100000 entonces lo que hace ese trozo de código es esto 000100, desplaza hacía la derecha
+#a nuestro número original y eso da como resultado 4, lo pueden verificar ustedes mismos haciendo este procedimiento a mano
+
+print("Resultado anterior más la nueva operación: ", 4 & 0x13)
+#Explicación visual: con lo anterior visto, sabemos que el primer resultado de la operación es 4 y en binario es 100 luego aplicamos el & con un hexadecimal que es 0x13
+# y eso en binario es 10011 y en decimal es igual a 19, entonces, lo que sucede aquí es lo siguiente 100 AND 10011, aplicado sería algo así
+
+# 00100
+# 10011 AND
+# ---------
+# 00000
+# Este resultado se debe a que en ningún momento existe una coincidenci de 1 y 1, por ende siempre es 0, para que quede más claro
+#Lo voy a explicar con el mismo ejercicio, pero con un hexadecimal diferente
+
+print("Ejercicio con Hex diferente: ", 4 & 0x17)
+#Explicación visual
+# 00100
+# 10111 AND
+# ---------
+# 00100
