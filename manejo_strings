@@ -1,0 +1,50 @@
+#Si sA = “Sigis” sB = “Fredo” → Qué se obtiene con la operación sA + sB ?
+sA = "Sigis" ; sB = "Fredo"
+sC = sA + sB
+print("Resultado de concatenación de sA y sB: ", sC)
+
+# ¿ Se puede hacer sA – sB? Fundamente ?
+
+#No sé puede porque al momento de tratar como número una cadena de strings el interprete o compilador nos dará un error, diciendo que el tipo de dato
+#que estamos usando para realizar esta operación aritmetica no es correcto, por otro lado sí se pueden "sumar", puesto que el interprete o compilador
+#lo toma como si fuera una concatenación de cadenas
+
+#############################################################################################################################################################################
+#############################################################################################################################################################################
+#############################################################################################################################################################################
+#  Si sMsg = “454545454@*=)(441$2345”,  → En qué posiciones estan los simbolos '4'?
+# Sí vemos este mensaje como un array de muchos char, es fácil saber la posición de cada uno de los números 4, representado de una forma visual
+# sería ver algo similar a esto
+
+#Suponiendo que coloque
+"""todo bien y no me equivoque en algún número ya sabemos en que posición esta cada 4 dentro de la cadena de texto
+
+Esto se puede ver de la siguiente forma indice =  [0] valor = [x], entocnes en cada indice tenemos un valor x
+
+sMsG =  [0][4]
+		[1][5]
+		[2][4]
+		[3][5]
+		[4][4]
+		[5][5]
+		[6][4]
+		[7][5]
+		[8][4]
+		[9][@]
+		[10][*]
+		[11][=]
+		[12][)]
+		[13][(]
+		[14][4]
+		[15][4]
+		[16][1]
+		[17][$]
+		[18][2]
+		[19][3]
+		[20][4]
+		[21][5]"""
+
+
+
+
+
