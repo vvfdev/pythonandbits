@@ -1,0 +1,13 @@
+#Explicaciones
+
+#El ~ es igual al operador lógico NOT, en otras palabras también podemos decir que nos sirve para calcular el complemente a1 de un número
+ej2 = ~23
+print("Ejerciocio 2: ", ej2)
+
+#Explicación visual
+
+# 23 = 10111, entonces
+
+# NOT 10111
+# ----------
+#     01000 que en este caso es igual a -24, pero sí lo sacamos de este contexto es 8  
