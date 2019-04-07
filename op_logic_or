@@ -1,0 +1,14 @@
+#Explicación
+
+# El | es igual al operador lógico or, sí x e y son 0 y 0 el resultado es 0, de lo contrario es 1
+ej6 = 124 | 235
+print("Resultado con operador lógico or: ",  ej6)
+
+#Explicación visual
+
+# 124 = 1111100 y 235 = 11101011
+
+# 01111100
+# 11101011 OR
+# ---------------
+# 11111111
