@@ -1,0 +1,17 @@
+#Explicaciones
+
+# aquí se realiza un corrimiento pero es hacía la izquierda, luego de eso a ese resultado se le aplica un operador lógico que en este caso es XOR
+
+ej5 = 5 << 7 ^ 1002
+print("Corrimiento hacía la izquierda: ", 5 << 7)
+#Aquí el procedimiento es casi lo mismo que con el shift right, pero los ceros van al otro lado del número, entonces, nos queda así
+# 5 = 101, aquí aplicamos un corrimiento de 7 a nuestro 5 en binario y queda así 1010000000 que es igual a = 640, no lo intenten
+#sacar con calculadora, porque da un resultado en negativo, ya que no soporta el número 640 como binario
+
+print("Resultado anterior más operador lógico xor: ", 640 ^ 1002)
+#Como ya sabemos el XOR ahora es mucho más fácil, y queda así
+
+# 1010000000
+# 1111101010 XOR
+# ---------------
+# 0101101010
