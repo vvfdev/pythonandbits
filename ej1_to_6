@@ -1,0 +1,39 @@
+#1
+arrayp = [1,2,3,4,5,6,7,8,9,10]
+for i in range(len(arrayp)):
+	if i % 2:
+		print("Número par: ", arrayp[i])
+		
+#2
+for e in [65,66,67,68]:
+	print("La letra es: ", chr(e))
+	
+#3
+
+aData = [1,2,3,4,5]
+
+for i in range(len(aData)):
+	print(i, ")","Valor:", aData[i])
+	print("Valores del array +2 : ", aData[i]+2)
+	print("Valores del array *3: ", aData[i]*3)
+	
+#4
+
+aD1 = [1,2,3,4,5]; aD2 = [5,6,7,8,5]
+
+for i in range(len(aD1)):
+	for j in range(len(aD2)):
+		print("Resultado de la resta de ambos arrays: ", aD1[i]-aD2[j])
+		
+
+
+#5
+
+for i in range(4):
+	print("Shift Left: ", 3<<i)
+	
+
+#6
+
+for i in range(4):
+	print("Shift Right: ", 196 >> i)
