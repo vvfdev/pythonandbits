@@ -1,0 +1,35 @@
+#Sí aún no entiendes el array de 1 dimensión no pases a este tipo de array o vas a quedar muy confuso
+
+#Bien suponiendo que ya entiendes el array de una dimensión ahora debes ver el de dos dimensiones, como es esto de un array de dos dimensiones, pues a continuación te lo muestro
+
+#Esto que ves aquí es un array de 2 dimensiones
+mi_array2d = [["Valor array 1", "Valor array 1-2"], ["Valor array 2", "Valor array 2-2"], ["Valor array 3", "Valor Array 3-2"]]
+
+
+#Bien es probable que ahora mismo no entiendas nada de esto, ni tampoco sepas que es un for anidado que es lo que estamos usando aquí, pero lo explicare de una forma fácil
+#de entender, como ya sabemos el funcionamiento del bucle for no lo explicare aquí, sino más bien voy a explicar como es que trabaja esto, nuestro primer for, recorre al
+#array principal y el segundo for recorre a todos los sub-arrays que tiene dentro del primer array, bien puedes tomarte un tiempo para digerir y entender esto
+for i in range(len(mi_array2d)):
+    for j in range(len(mi_array2d[i])):
+        print(mi_array2d[i][j], end=' ')
+    print()
+    
+#Bueno esto lo que hace es que tiene que recorrer, primero el indice del array principal mi_array2d = [], esto es el array principal, luego el segundo bucle for tiene que 
+#recorrer el indice de los sub-arryas que están dentro del primer array es decir mi_array2d = [sub-arrays ->[],sub-arrays ->[] sub-arrays ->[] ], entonces, lo qu aquí tenemos
+#visto de una forma un poco más simple es algo como esto 
+#mi_array2d = [i = [0][j = 0][Valor array 1][j = 1][Valor array 1-2], [i = [1][j = 0][Valor array 2][j = 1][Valor array 2-2], [i = [2][j = 0][Valor array 3][j = 1][Valor array 3-2]]
+#Así es que nuestra variable i recorre los indices del primer array y la varibale j recorre los indices de nuestros sub-arrays, ahora lo mostraré de otra forma, por sí no quedo
+#claro con la anterior
+
+"""
+mi_array2d = array principal ->[sub array n°1 con indice 0 ->[], sub array n°2 con indice 1 -> [], sub array n°3 con indice 2 -> []]
+
+luego dentro de cada sub array tienen su propio indice es decir
+
+mi_array2d = array principal ->[sub array n°1 con indice 0 ->[indice 0 = Valor array 1, indice 1 = Valor array 1-2], sub array n°2 con indice 1 -> [indice 0 = Valor array 2, indice 1 = Valor array 2-2], sub array n°3 con indice 2 -> [indice 0 = Valor array 3, indice 1 = Valor array 3-2]]
+
+
+
+
+
+"""
