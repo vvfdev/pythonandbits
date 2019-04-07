@@ -1,6 +1,6 @@
 #Explicaciones
 
-# >> = shift right, hace un corrimiento de 32 al binario de 3
+# >> = shift right, hace un corrimiento de 3 al binario de 32
 # el & es equivalente a el operador lógico AND y lo que hace es que sí x & y = 1, entonces es 1, caso contrario es 0
 ej1 = 32 >> 3 & 0x13
 print("Corrimiento hacía la derecha: ", 32 >> 3)
