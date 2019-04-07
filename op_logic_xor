@@ -1,0 +1,15 @@
+#Explicaciones
+
+#El simbolo ^ es igual al operador lógico XOR
+ej3 = 230 ^ 180
+
+print("Resultado con operador lógico XOR: ", ej3)
+
+#Explicación visual
+
+# 230 = 11100110 y 180 = 10110100, entonces
+
+# 11100110
+# 10110100 XOR
+# -------------
+# 01010010
