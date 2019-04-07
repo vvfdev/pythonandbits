@@ -1,0 +1,60 @@
+#Okay, aquí más les vale estar sentados, porque los arrays no son precisamente faciles de enteder la primera vez que se ven, así que tratare ser lo más explicito
+#posible y usar el lenguaje técnico justo y necesario
+# como diría mi abuela "afirmense los cacaguates"
+
+#Array de una dimensión (Es el más fácil)
+
+#Bien sí leyeron el archivo de manejo de string van a estar un paso por delante aquí, pues ya entienden dos conceptos esceniales de los arrays que son el indive y el valor
+# que puede contener cada uno de estos entonces
+
+#Declaramos nuestro array
+
+#Este Array tiene 3 valores, pero sus indices no son 1, 2 y 3, sino que es 0, 1 y 2
+mi_array = ["Valor 1", "Valor 2", "Valor 3"]
+
+#Aquí voy a escribir una representación visual de como se vería
+
+"""mi_array = [0] = [Valor 1]
+			  [1] = [Valor 2]
+			  [2] = [Valor 3]"""
+
+#Bien, con eso ya deberían tener un poco más claro el concepto de array, que es básicamente, cada indice de nuestro array puede contener un dato, especificamente en python
+#Podríamos tener un array con tipos de datos diferentes, por ejemplo
+
+#En este array hay 3 tipos de datos int, float/double/real, y strings
+mi_array_int_string = ["Valor 1", 56, "Valor 2", 0.56]
+
+#Ahora vamos a aprender a recorrer un array, para esto debemos saber usar el ciclo for, sí no lo sabes usar, te lo explicaré ahora así que don't worry be happy
+
+#Okay, puede ser que esto te parezca chino mandarin o puede que no, pero sí te parece chino, ahora te explico que es lo que esta pasando aquí
+
+
+#Empecemos por entender el bluce en sí, lo que hace el bluce for es iterar con el programa hasta que la condición del rango de valores que se le dio a recorrer se cumpla
+#y para que esto pueda suceder requerimos de una variable que declaramos seguidamente después del for, en este caso le pusimos i, pero puede tomar cualquier nombre
+#no obtante, se suele usar esta letra para el bluce for, casi por convención.
+#En este caso, hasta que el bluce no haya recorrido todos los datos de nuestro array no se va a detener
+
+# Bien ya entendemos la base del bucle for, ahora hay que entender que es lo que hace range y len, creo que range se explica solo, que básicamente es "para i en el rango"
+# así es como se debería de leer este bucle en español, luego (len) viene de la palabra en inglés length, por lo cual nos sirve para saber cuanto es la longitud de nuestro
+# array, en este caso la longitud es de 3
+for i in range(len(mi_array)):
+	#Ahora debería ser menos chino el bluce y deberías ser capaz de entenderlo un poco mejor, de todas formas te recomiendo leer esto más de una vez sí es necesario
+	#ahora debemos imprimir nuestro array por pantalla, para esto evidentemente usamos el comando print y dentro de el colocamos nuestro array que se llama mi_array
+	#pero, aquí hay algo más pues sí dejamos el array solo, nos va a imrprimir tres veces los tres valores, entonces tenemos que especificar qeu valores queremos
+	#que muestre, para esto debemos usar nuestra variable que declaramos e el for, es decir, la i y la vamos a colocar entre corchetes después de nuestro array
+	print(mi_array[i])
+
+#Ahora les explicaré que es lo que hace esa i, pero supongo que algunos ya se hacen a la idea, lo que esta i esta representando en nuestro array es el indice de cada uno
+# de lo valores de nuestro array, entonces esto visto de una forma más explicita sería algo así
+
+"""
+Al momento de iniciar el bucle i comienza como 0, entonces el programa entiende que queremos el valor almacenado en el indice 0 de nuestro array y lo imprimer por pantalla
+luego i vuele a pasar, pero ahora pasa como un 1, entonces nos muestra el valor con indice 1 y luego vuelve a pasar pero ahora como 2 y nos muestra el valor almacenado en
+ese indice
+i = 0
+
+mi_array = [i = 0][Valor 1]
+           [i = 1][Valor 2]
+		   [i = 2][Valor 3]
+
+"""
